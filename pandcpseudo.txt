@@ -1,1 +1,147 @@
-pseudo goes here
+
+// define consumer entity
+struct consumerClass	{
+    int pFillCount;
+    int cRemCount;
+    int cID;
+    int cTime; 
+}
+
+// define producer entity
+struct producerClass{
+    int pFillCount;
+    int pRemCount;
+    int pId;
+    int pTime;
+}
+
+
+function grab_item(param)
+{
+    specify counter to keep track of loop and buffer
+    create consumer with param
+    create consumer details- size and Id...
+
+    while(count++ < size){
+
+        invoke semaphore wait (full)
+        invoke mutex lock
+        store the item in the buffer to the consumerArray        
+        print consumer number and consumed item number
+        decrement remaining item count
+
+        { iterate through the producer buffer until reached N size buffers
+            reset buffer if 0;
+            otherwise increment; 
+
+        }
+
+        put thread on sleep
+        invoke semaphore post (empty)
+        invoke mutex unlock
+
+    }
+
+    print consumer thread info when it is done and joined.
+    Exit(-1)
+}
+
+function put_item(param)
+{
+    specify counter to keep track of loop and buffer
+    create producer with param
+    create producer details- size and Id...
+
+    while(count++ < size){
+
+        invoke semaphore wait (empty)
+        invoke mutex lock
+
+        store produced item in the buffer
+        store the item in the buffer to the producerArray
+
+        print producer number and produced item
+
+        increment counter
+        increment producer counter;
+
+        { iterate through the producer buffer until reached N size buffers
+            reset buffer if 0;
+            otherwise increment; 
+
+        }
+        put thread on sleep
+
+        invoke semaphore post (full)
+        invoke mutex unlock
+    }
+
+    Exit (-1)
+}
+
+Main {
+
+    create producer and consumer thread
+    create instance of producer and consumer
+
+    create user prompt explaining different expected arguments
+
+    "Invalid Input: please follow the following pattern:" 
+                        "\n./pandc amountBuff,  producerNum consumnerNum itemsInBuffer timeProduced timeConsumed\n"); 
+
+    allocate memory  for producer thread
+    allocate memory  for consumer thread
+
+    allocate memory  for producer instance
+    allocate memory  for consumer instance
+
+    invoke semaphore init (&full)
+    invoke semaphore init (&empty)
+    invoke mutex m
+
+    time tracking and print the start time
+
+    while (sum < producerNum){
+        producerID = sum
+        producerRemainCount = amountBuffere
+        itemPerProducer = itemsmInBuffer
+        producerBusyTime = pTime
+        create producer thread and invoke produceHandler function
+    }
+
+    while (sum < consumerNum ){
+        cID = sum
+        consumerBuffer = amountBuffere
+        itemPerConsumer = itemsConsumed
+        consumerBusyTime = cTime
+        create consumer thread and invoke produceHandler function
+    }
+
+    while (sum < producerNum){
+        join producer thread
+    }
+
+    while (sum < consumerNum){
+        join consumer thread
+    }
+
+    {
+        for each sum less than P * X
+            printing out the matching consumer and producer arrays
+                if equal
+                    print MATCH      
+            if not equal 
+                print !MATCH
+    }
+    
+    clean up buffer 
+    clean up space of the producer and consumer thread
+    clean up space of the instance of producer and consumer
+    invoke mutex unlock
+    invoke semaphore destroy (full and empty)
+    print end time and print the time duration of execution
+
+    return (0);
+
+
+}

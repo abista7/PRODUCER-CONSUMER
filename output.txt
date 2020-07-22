@@ -1,1 +1,253 @@
-OUTPUT GOES HERE
+//OUTPUT GOES HERE
+
+arjunbista@Arjuns-MBP-2 csc415-p3-abista7 % ./pandc 7 5 3 15 1 1
+
+Current Time: Wed Jul 22 07:44:18 2020
+
+                                  Numbers of Buffers : 7 
+                                Numbers of Producers : 5 
+                                Numbers of Consumers : 3 
+   Number of items each Producer Thread will Produce : 15 
+                           Time each Producers sleep : 1 
+                           Time each Consumers sleep : 1
+
+1 was produced by producer-> 2
+2 was produced by producer-> 1
+3 was produced by producer-> 1
+4 was produced by producer-> 1
+5 was produced by producer-> 1
+6 was produced by producer-> 1
+7 was produced by producer-> 1
+8 was produced by producer-> 1
+9 was produced by producer-> 2
+10 was produced by producer-> 2
+11 was produced by producer-> 2
+12 was produced by producer-> 2
+13 was produced by producer-> 2
+14 was produced by producer-> 2
+15 was produced by producer-> 2
+16 was produced by producer-> 2
+17 was produced by producer-> 2
+18 was produced by producer-> 2
+19 was produced by producer-> 2
+20 was produced by producer-> 2
+21 was produced by producer-> 2
+22 was produced by producer-> 2
+23 was produced by producer-> 1
+24 was produced by producer-> 1
+25 was produced by producer-> 1
+26 was produced by producer-> 1
+27 was produced by producer-> 1
+28 was produced by producer-> 1
+22 was consumed by consumer-> 3
+29 was produced by producer-> 4
+30 was produced by producer-> 4
+31 was produced by producer-> 4
+32 was produced by producer-> 4
+33 was produced by producer-> 4
+34 was produced by producer-> 4
+35 was produced by producer-> 4
+36 was produced by producer-> 4
+37 was produced by producer-> 4
+38 was produced by producer-> 4
+39 was produced by producer-> 4
+40 was produced by producer-> 4
+41 was produced by producer-> 4
+42 was produced by producer-> 4
+43 was produced by producer-> 4
+37 was consumed by consumer-> 1
+38 was consumed by consumer-> 2
+44 was produced by producer-> 1
+45 was produced by producer-> 1
+46 was produced by producer-> 3
+Producer Thread Joined:  1
+Producer Thread Joined:  2
+47 was produced by producer-> 3
+48 was produced by producer-> 3
+49 was produced by producer-> 3
+50 was produced by producer-> 3
+51 was produced by producer-> 3
+52 was produced by producer-> 3
+53 was produced by producer-> 3
+54 was produced by producer-> 3
+55 was produced by producer-> 3
+56 was produced by producer-> 3
+57 was produced by producer-> 3
+58 was produced by producer-> 3
+59 was produced by producer-> 3
+60 was produced by producer-> 3
+60 was consumed by consumer-> 2
+54 was consumed by consumer-> 3
+Producer Thread Joined:  3
+61 was produced by producer-> 5
+Producer Thread Joined:  4
+62 was produced by producer-> 5
+63 was produced by producer-> 5
+64 was produced by producer-> 5
+65 was produced by producer-> 5
+66 was produced by producer-> 5
+67 was produced by producer-> 5
+68 was produced by producer-> 5
+69 was produced by producer-> 5
+69 was consumed by consumer-> 2
+63 was consumed by consumer-> 1
+64 was consumed by consumer-> 3
+70 was produced by producer-> 5
+71 was produced by producer-> 5
+65 was consumed by consumer-> 2
+72 was produced by producer-> 5
+73 was produced by producer-> 5
+73 was consumed by consumer-> 3
+67 was consumed by consumer-> 2
+68 was consumed by consumer-> 1
+74 was produced by producer-> 5
+69 was consumed by consumer-> 1
+70 was consumed by consumer-> 3
+75 was produced by producer-> 5
+71 was consumed by consumer-> 2
+Producer Thread Joined:  5
+72 was consumed by consumer-> 1
+73 was consumed by consumer-> 3
+74 was consumed by consumer-> 2
+75 was consumed by consumer-> 1
+69 was consumed by consumer-> 3
+70 was consumed by consumer-> 1
+71 was consumed by consumer-> 2
+72 was consumed by consumer-> 3
+73 was consumed by consumer-> 1
+74 was consumed by consumer-> 2
+75 was consumed by consumer-> 3
+69 was consumed by consumer-> 1
+70 was consumed by consumer-> 2
+71 was consumed by consumer-> 3
+72 was consumed by consumer-> 1
+73 was consumed by consumer-> 3
+74 was consumed by consumer-> 2
+75 was consumed by consumer-> 3
+69 was consumed by consumer-> 1
+70 was consumed by consumer-> 2
+71 was consumed by consumer-> 3
+72 was consumed by consumer-> 1
+73 was consumed by consumer-> 2
+74 was consumed by consumer-> 3
+75 was consumed by consumer-> 2
+69 was consumed by consumer-> 1
+70 was consumed by consumer-> 3
+71 was consumed by consumer-> 2
+72 was consumed by consumer-> 1
+73 was consumed by consumer-> 3
+74 was consumed by consumer-> 2
+75 was consumed by consumer-> 1
+69 was consumed by consumer-> 3
+70 was consumed by consumer-> 1
+71 was consumed by consumer-> 2
+72 was consumed by consumer-> 3
+73 was consumed by consumer-> 2
+74 was consumed by consumer-> 1
+75 was consumed by consumer-> 2
+69 was consumed by consumer-> 3
+70 was consumed by consumer-> 1
+71 was consumed by consumer-> 2
+72 was consumed by consumer-> 3
+73 was consumed by consumer-> 1
+74 was consumed by consumer-> 2
+75 was consumed by consumer-> 1
+69 was consumed by consumer-> 3
+70 was consumed by consumer-> 2
+71 was consumed by consumer-> 3
+72 was consumed by consumer-> 1
+73 was consumed by consumer-> 2
+74 was consumed by consumer-> 3
+75 was consumed by consumer-> 1
+69 was consumed by consumer-> 2
+70 was consumed by consumer-> 3
+71 was consumed by consumer-> 1
+72 was consumed by consumer-> 2
+73 was consumed by consumer-> 1
+74 was consumed by consumer-> 3
+75 was consumed by consumer-> 1
+Consumer Thread Joined:  1
+Consumer Thread Joined:  2
+Consumer Thread Joined:  3
+End time: Wed Jul 22 07:45:53 2020
+
+Producer Array  | Consumer Array
+1               | 22             
+2               | 37             
+3               | 38             
+4               | 60             
+5               | 54             
+6               | 69             
+7               | 63             
+8               | 64             
+9               | 65             
+10              | 73             
+11              | 67             
+12              | 68             
+13              | 69             
+14              | 70             
+15              | 71             
+16              | 72             
+17              | 73             
+18              | 74             
+19              | 75             
+20              | 69             
+21              | 70             
+22              | 71             
+23              | 72             
+24              | 73             
+25              | 74             
+26              | 75             
+27              | 69             
+28              | 70             
+29              | 71             
+30              | 72             
+31              | 73             
+32              | 74             
+33              | 75             
+34              | 69             
+35              | 70             
+36              | 71             
+37              | 72             
+38              | 73             
+39              | 74             
+40              | 75             
+41              | 69             
+42              | 70             
+43              | 71             
+44              | 72             
+45              | 73             
+46              | 74             
+47              | 75             
+48              | 69             
+49              | 70             
+50              | 71             
+51              | 72             
+52              | 73             
+53              | 74             
+54              | 75             
+55              | 69             
+56              | 70             
+57              | 71             
+58              | 72             
+59              | 73             
+60              | 74             
+61              | 75             
+62              | 69             
+63              | 70             
+64              | 71             
+65              | 72             
+66              | 73             
+67              | 74             
+68              | 75             
+69              | 69             
+70              | 70             
+71              | 71             
+72              | 72             
+73              | 73             
+74              | 74             
+75              | 75             
+
+Producer and Consumer Arrays Match!
+Total time taken: 95 secs
+arjunbista@Arjuns-MBP-2 csc415-p3-abista7 % 
