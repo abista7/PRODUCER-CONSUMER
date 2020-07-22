@@ -8,4 +8,5 @@
 type "make pandc" in terminal
 
 ## Run Instructions
-"./pandc 7 5 3 15 1 1
+follow the following format in terminal to run
+"./pandc 7 5 3 15 1 1"
